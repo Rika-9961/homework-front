@@ -11,11 +11,3 @@ export function getById(id) {
 export function getAll() {
     return request.get('/data')
 }
-
-export function exportCSV() {
-    return request({
-        url: '/api/fp-growth/export',
-        method: 'get',
-        responseType: 'blob'
-    })
-}

@@ -3,9 +3,10 @@ import axios from 'axios'
 // import { removeToken,getToken } from '@/utils/auth'
 
 const service = axios.create({
-  baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
+  // baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
+  baseURL: 'http://localhost:8080/',
   withCredentials: true,
-  timeout: 500000 
+  timeout: 500000
 })
 
 
@@ -36,7 +37,7 @@ const service = axios.create({
 //         return res;
 //       }
 //     },
-    
+
 //     error => {
 //       console.log('err' + error)
 //       let { message } = error;
